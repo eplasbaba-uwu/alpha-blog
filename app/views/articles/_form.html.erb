@@ -1,0 +1,26 @@
+<% if @article.errors.any? %>
+    <h2>uhh...looks like ur article did not meet the requirements needed:(</h2><br/>
+    <h3>take a look at these errors and try again!</h3><br/>
+    <ul>
+        <% @article.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+    </ul>
+<% end %>
+
+
+<%= form_with(model: @article, local: true) do |f| %>
+    <p>
+        <%= f.label :title %><br/>
+        <%= f.text_field :title%>
+    </p>
+
+    <p>
+        <%= f.label :description %><br/>
+        <%= f.text_area :description %>
+    </p>
+
+    <h3>
+        <%= f.submit %>
+    </h3>
+<% end %>
