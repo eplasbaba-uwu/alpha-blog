@@ -1,1 +1,9 @@
-<h1>This is the home page</h1>
+<h1 style="text-align:center">Helo, Welcome to the EplasbabaBlog!</h1>
+<hr>
+<h3>check out the following links to get started</h3>
+<p></p>
+<ul>
+    <li><%= link_to "Click on me if u want to see all the articles", articles_path() %></li>
+    <li><%= link_to 'Click on me if u want to create a new article', new_article_path(@article) %></li>
+    <li><%= link_to "Click on me if u want to go to the about page", about_path() %></li>
+</ul>
