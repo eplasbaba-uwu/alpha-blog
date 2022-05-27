@@ -1,2 +1,4 @@
-this is a blog application built using ruby on rails! 
-Stay tuned for more updates and commits!
+blog application
+very basic
+idk what i am doing
+[visit site here](alpha-blog-eplasbaba.herokuapp.com)
